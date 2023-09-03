@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/juguete-del-gato-By Freepik.png" type="image/x-icon">
+    <!-- Icono realizado por Freepik de  https://www.flaticon.es/iconos-gratis/gatos/ By juicy_fish-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Me laten las historias</title>
+</head>
+<body >
+    <div >
+        <section class="portada" >
+
+            <header >
+                <p class="subtitle">ME LATEN LAS HISTORIAS</p>
+                <h1>A MEDIAS</h1>
+            </header>
+
+            <div class="margen-imagen">
+                <img src="assets/img/campoNOcolor2.jpg" oncontextmenu="return false" width="500px" alt="puebloSeco"  >
+            </div>
+
+            <p class="img-pueblo" >
+                <a href="medias-3.html" > 
+                    <img  class="img-pueblo_arbol" id="drag1" draggable="true" ondragstart="drag(event)" src="assets/img/arbol-icono.png" alt="puebloSeco" > 
+                </a>
+
+                <a href="medias-4.html"> <img class="img-pueblo_abuela" id="drag2" draggable="true" ondragstart="drag(event)" src="assets/img/abuela-icono.png" alt="puebloSeco"> </a> 
+
+                <a href="medias-1.html"> <img class="img-pueblo_desierto" id="drag3" draggable="true" ondragstart="drag(event)" src="assets/img/desierto-icono.png" alt="puebloSeco"> </a>
+
+                <a href="medias-2.html"> <img class="img-pueblo_murcielago" id="drag4" draggable="true" ondragstart="drag(event)" src="assets/img/murcielago-icono.png" alt="puebloSeco"> </a>
+
+                <a href="medias-5.html"> <img class="img-pueblo_embellecido" id="drag5" draggable="true" ondragstart="drag(event)" src="assets/img/embellecido-icono.png" alt="puebloSeco"> </a>
+            </p>
+
+            <div>
+                <p><b> Sé testigo de estos microcuentos</b> <br><br> ¿Cómo los ordenarías en un gran cuento?  <br> Primero dale click a cada uno de los íconos <br> Lee y escucha cada una de las historias y despues... <br> Arrastra cada una de las imagenes al numero que crees que le corresponde</p>
+            
+                <div style="display: flex; justify-content: center;">
+                    <p style="  display: inline-block; width: 50px; height: 70px; padding: 10px; border: 5px solid #aaaaaa;" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">1
+                    </p>
+                    
+                    <p style=" display: inline-block; width: 50px; height: 70px; padding: 10px; border: 5px solid #aaaaaa;" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">2
+                    </p>
+                    
+                    <p style=" display: inline-block; width: 50px; height: 70px; padding: 10px; border: 5px solid #aaaaaa;" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">3
+                    </p>
+                    
+                    <p style=" display: inline-block; width: 50px; height: 70px; padding: 10px; border: 5px solid #aaaaaa;" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">4
+                    </p>
+                    
+                    <p style=" display: inline-block; width: 50px; height: 70px; padding: 10px; border: 5px solid #aaaaaa;" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">5
+                    </p>
+                </div>
+            </div>
+
+            <button class="boton-seleccion">
+                <img class="lana-BN" src="assets/img/juguete-de-gato_BN_By Freepik.png" alt="bolaDeLana"> <a href="medias-preguntas.html">Pensemos</a> 
+            </button>
+
+            <div class="linea"></div>
+            <div>
+                <p class="restart"><a href="index.html">INICIO</a> </p>
+                <p class="titulo-narracion">ME LATEN LAS HISTORIAS </p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function toggleZoomScreen() {
+            document.body.style.zoom = "50%";
+            }
+        toggleZoomScreen();
+        // document.body.style.transform = 'scale(2)';
+
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+</body>
+</html>

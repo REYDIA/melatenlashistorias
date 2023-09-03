@@ -1,0 +1,371 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+}
+/* div{
+    /* border: 1px solid red; 
+} */
+
+section{
+    background-color: rgb(236, 236, 229);
+    margin: 0 auto;
+
+}
+
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'take-coffee';
+    src: url('assets/bunny_funny/BunnyFunny.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+.portada{
+    /* position: absolute; */
+    border: thin solid rgb(212, 211, 211);
+    box-shadow: 10px 10px 10px rgb(212, 211, 211);
+    width: 750px;
+    /* width: 80vw; */
+    height: auto;
+    text-align: center;
+    /* left: 25%; */
+}
+
+.margen-imagen{
+    margin: 40px;
+}
+
+img{
+    /* margin: 2%;
+    border: 5px solid rgb(160, 156, 156);
+    border-radius: ;
+    box-shadow: none; */
+    max-width: 100%;
+    height: auto;
+}
+
+/* .portada{
+    margin: 2vw;
+    width: 50vw;
+} */
+
+header{
+    font-family: 'take-coffee';
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: rgb(226, 223, 223);
+    width: 60%;
+    margin: 0.3% auto;
+    padding: 11px;
+    opacity: 0%;
+}
+
+.btn-portada{
+    margin-top: 3%;
+}
+
+h1{
+    margin: 2px auto;
+    padding: 25px;
+    border-top: 7px solid rgb(161, 159, 159);
+    border-bottom: 7px solid rgb(161, 159, 159);
+    width: 70%;
+    font-size: 40px;
+}
+
+button{
+    font-family: serif;
+    font-size: 25px;
+    color: rgb(92, 92, 92);
+    border-radius: 5px;
+    box-shadow: 2px 3px 1px rgb(0, 0, 0);
+    width: 70%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0 1px rgb(212, 211, 211);
+}
+
+.boton-seleccion{
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.overflow{
+    overflow-y: scroll; 
+    height: 200px;
+}
+
+.lana-BN{
+    width:25px;
+    height: auto;
+}
+
+.linea{
+    width: 85%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(161, 159, 159);
+}
+
+.restart{
+    font-size: medium ;
+    position: relative;
+    right: -77%;
+    display: inline-block;
+
+}
+
+.titulo-narracion{
+    font-size: medium ;
+    /* font-size: 1vw ; */
+    font-weight: bold;
+    position: relative;
+    margin-right: 400px;
+    width: 200px;
+    right: 7%;
+    top: -1000%;
+    display: inline;
+
+}
+
+.contenedor-partes{
+    /* position: absolute; */
+    left: 350px;
+    bottom: 150px;
+    width: 10px;
+    height: 0px;
+    
+}
+
+.parte-1{
+    bottom: 520px;
+    left: 270px;
+    display: inline-block;
+    width: 2000%;
+}
+
+.parte-2{
+    bottom: 480px;
+    left: 270px;
+    display: inline-block;
+    width: 2000%;
+}
+
+.parte-3{
+    bottom: 430px;
+    left: 270px;
+    display: inline-block;
+    width: 2000%;
+}
+
+.rukiti{
+    bottom: 450px;
+    left: 120px;
+    display: inline-block;
+    width: 1100%;
+    height: 120px;
+}
+
+.medias{
+    bottom: 610px;
+    left: 530px;
+    display: inline-block;
+    width: 1000%;
+    height: 90px;
+}
+
+.parte-1:hover,
+.parte-2:hover,
+.parte-3:hover{
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.img-pueblo{
+    position: relative;
+}
+
+.img-pueblo img{
+    position: absolute;
+}
+
+.img-pueblo_arbol{
+    top: -200px;
+    left: 220px;
+    width: 100px;
+}
+.img-pueblo_abuela{
+ top: -700px;
+ left: 350px;
+ width: 100px;
+}
+
+.img-pueblo_desierto{
+    top: -200px;
+    left: 450px;
+    width: 100px;
+}
+
+.img-pueblo_murcielago{
+    top: -500px;
+    left: 500px;
+    width: 100px;
+}
+
+.img-pueblo_embellecido{
+    top: -500px;
+    left: 220px;
+    width: 100px;
+}
+
+/*=====================GALERIA - (global)=============================*/
+.img-galeria{
+    position: relative; 
+}
+
+.img-galeria img{
+    position: absolute; 
+    width: 150px;
+}
+
+.img-galeria__juguetes{
+    top: -150px;
+    left: 300px;
+
+}
+
+.img-galeria__aparatos{
+    top: -330px;
+    left: 500px;
+}
+
+.img-galeria__accesorios{
+    top: -270px;
+    left: 150px;
+}
+/*=========================================================*/
+
+/*=====================GALERIA -> JUGUETES/JUEGOS=============================*/
+.img-galeria__patines{
+    top: -450px;
+    left: 120px;
+}
+
+.img-galeria__munieca{
+    top: -450px;
+    left: 500px;
+}
+
+.img-galeria__carro{
+    top: -300px;
+    left: 300px;
+}
+
+.img-galeria__cicla{
+    top: -150px;
+    left: 120px;
+}
+
+.img-galeria__balon{
+    top: -180px;
+    left: 500px;
+}
+
+/*=========================================================*/
+
+/*=====================GALERIA -> APARATOS=============================*/
+.img-galeria__computador{
+    top: -450px;
+    left: 120px;
+}
+
+.img-galeria__tablet{
+    top: -450px;
+    left: 500px;
+}
+
+.img-galeria__celular{
+    top: -180px;
+    left: 120px;
+}
+
+.img-galeria__consola{
+    top: -180px;
+    left: 500px;
+}
+
+/*=========================================================*/
+
+/*=====================GALERIA -> ACCESORIOS=============================*/
+.img-galeria__pijama{
+    top: -500px;
+    left: 300px;
+}
+
+.img-galeria__manilla{
+    top: -180px;
+    left: 150px;
+}
+
+.img-galeria__gafas{
+    top: -180px;
+    left: 450px;
+}
+/*=========================================================*/
+
+
+/*===================== CREDITOS =============================*/
+
+
+/*=========================================================*/
+
+@media (max-width: 720px) {
+    body{
+        zoom: 0.5;
+    }
+    .img-portada{
+        width: 1000px !important;
+    } 
+}
